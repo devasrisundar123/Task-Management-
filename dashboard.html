@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Task Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="dashboard-container">
+
+    <h1>Task Management Dashboard</h1>
+
+    <button class="logout-btn" onclick="logout()">
+        Logout
+    </button>
+
+    <div class="task-form">
+
+        <h2>Add New Task</h2>
+
+        <input
+            type="text"
+            id="title"
+            placeholder="Task Title">
+
+        <textarea
+            id="description"
+            placeholder="Task Description">
+        </textarea>
+
+        <button id="addBtn" onclick="addTask()">  Add Task</button>
+    </div>
+
+    <div class="task-list">
+
+        <h2>My Tasks</h2>
+
+        <div id="taskList">
+
+            <!-- Tasks will appear here -->
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+<script>
+    loadTasks();
+</script>
+
+</body>
+</html>

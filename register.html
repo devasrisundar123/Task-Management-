@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Register</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <center>
+<h1>TASK MANAGEMENT APPLICATION</h1>
+<h3>Register</h3>
+
+<form onsubmit="registerUser(); return false;">
+    <table>
+        
+       <tr>
+    <td>Email id:</td>
+    <td>
+        <input type="email"
+               id="email"
+               placeholder="Enter Email">
+    </td>
+</tr>
+
+<tr>
+    <td>New Password:</td>
+    <td>
+        <input type="password"
+               id="password"
+               placeholder="Enter Password">
+    </td>
+</tr>
+
+<tr>
+    <td>Confirm Password:</td>
+    <td>
+        <input type="password"
+               id="confirmPassword"
+               placeholder="Confirm Password">
+    </td>
+</tr>
+        <tr>
+            <td></td> <td><input type="submit" value="Register"></td>
+    
+        </tr>   
+    </table>
+   <!-- <form onsubmit="registerUser(); return false;"></form> -->
+</form>
+<p>Login
+<a href="login.html">Login here</a></p>
+</center>
+
+<script src="script.js"></script>
+</body>
+</html>
